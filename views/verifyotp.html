@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vérification OTP</title>
+</head>
+<body>
+    <h1>Vérifiez votre compte</h1>
+    <p>Un code OTP a été envoyé à votre adresse : {{.Email}}</p>
+    <form action="/verifyotp" method="post">
+        <label>Code OTP :</label>
+        <input type="text" name="otp" required>
+        <br>
+        <button type="submit">Vérifier</button>
+    </form>
+</body>
+</html>
